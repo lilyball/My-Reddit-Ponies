@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>Chrome</key>
 	<dict/>
 	<key>Content</key>
@@ -31,7 +31,7 @@
 	<key>Description</key>
 	<string>Use MLP emotes anywhere on Reddit. It's so much better!</string>
 	<key>ExtensionInfoDictionaryVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>Permissions</key>
 	<dict>
 		<key>Website Access</key>
