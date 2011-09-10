@@ -13,20 +13,19 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>4.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>Chrome</key>
 	<dict/>
 	<key>Content</key>
 	<dict>
 		<key>Scripts</key>
-		<dict>
-			<key>End</key>
-			<array>
-				<string>user.js</string>
-			</array>
-		</dict>
+		<dict/>
+		<key>Stylesheets</key>
+		<array>
+			<string>ponies.css</string>
+		</array>
 	</dict>
 	<key>Description</key>
 	<string>Use MLP emotes anywhere on Reddit. It's so much better!</string>
