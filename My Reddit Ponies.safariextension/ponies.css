@@ -249,7 +249,7 @@ a[href="/c29"], a[href="/rc29"], a[href="/photofinish"], a[href="/rphotofinish"]
     background-position: -140px -630px
     }
 
-a[href="/a00"], a[href="/ajlie"], a[href="/a10"], a[href="/priceless"], a[href="/a20"], a[href="/flutterjerk"], a[href="/a01"], a[href="/twipride"] {
+a[href="/a00"], a[href="/ajlie"], a[href="/a01"], a[href="/a10"], a[href="/a11"], a[href="/a21"], a[href="/priceless"], a[href="/a20"], a[href="/flutterjerk"], a[href="/celestiamad"], a[href="/twicrazy"], a[href="/twipride"], a[href="/lunateehee"], a[href="/lunawait"], a[href="/a02"], a[href="/a12"] {
     display: block;
     clear: none;
     float: left;
@@ -257,7 +257,7 @@ a[href="/a00"], a[href="/ajlie"], a[href="/a10"], a[href="/priceless"], a[href="
     height: 70px;
     background-image: url(http://thumbs.reddit.com/t5_2s8bl_13.png?v=myRedditPonies)
     }
-a[href="/ra00"], a[href="/rajlie"], a[href="/ra10"], a[href="/rpriceless"], a[href="/ra20"], a[href="/rflutterjerk"], a[href="/ra01"], a[href="/rtwipride"] {
+a[href="/ra00"], a[href="/rajlie"], a[href="/ra01"], a[href="/ra10"], a[href="/ra11"], a[href="/ra21"], a[href="/rpriceless"], a[href="/ra20"], a[href="/rflutterjerk"], a[href="/rcelestiamad"], a[href="/rtwicrazy"], a[href="/twipride"], a[href="/rlunateehee"], a[href="/rlunawait"], a[href="/ra02"], a[href="/ra12"] {
     display: block;
     clear: none;
     float: left;
@@ -277,8 +277,20 @@ a[href="/a20"], a[href="/ra20"], a[href="/flutterjerk"], a[href="/rflutterjerk"]
 a[href="/a01"], a[href="/ra01"], a[href="/twipride"], a[href="/rtwipride"] {
     background-position: -0px -70px
     }
+a[href="/a11"], a[href="/ra11"], a[href="/celestiamad"], a[href="/rcelestiamad"] {
+    background-position: -70px -70px
+    }
+a[href="/a21"], a[href="/ra21"], a[href="/twicrazy"], a[href="/rtwicrazy"] {
+    background-position: -140px -70px
+    }
+a[href="/a02"], a[href="/lunateehee"], a[href="/ra02"], a[href="/rlunateehee"] {
+    background-position: -0px -140px
+    }
+a[href="/a12"], a[href="/lunawait"], a[href="/ra12"], a[href="/rlunawait"] {
+    background-position: -70px -140px
+    }
 
-a[href="/l00"], a[href="/lyra"], a[href="/t00"], a[href="/bonbon"], a[href="/sbstare"], a[href="/snails"], a[href="/rdhuh"], a[href="/spitfire"], a[href="/cutealoo"], a[href="/fillytgap"], a[href="/happyluna"], a[href="/lunahappy"], a[href="/sotrue"], a[href="/wahaha"], a[href="/berry"], a[href="/punchdrunk"], a[href="/absmile"], a[href="/huhhuh"], a[href="/dealwithit"] {
+a[href="/l00"], a[href="/lyra"], a[href="/t00"], a[href="/bonbon"], a[href="/sbstare"], a[href="/snails"], a[href="/rdhuh"], a[href="/spitfire"], a[href="/cutealoo"], a[href="/fillytgap"], a[href="/happyluna"], a[href="/lunahappy"], a[href="/sotrue"], a[href="/wahaha"], a[href="/berry"], a[href="/punchdrunk"], a[href="/absmile"], a[href="/huhhuh"], a[href="/dealwithit"], a[href="/nmm"], a[href="/whooves"], a[href="/rdsalute"] {
     display: block;
     clear: none;
     float: left;
@@ -286,7 +298,7 @@ a[href="/l00"], a[href="/lyra"], a[href="/t00"], a[href="/bonbon"], a[href="/sbs
     height: 70px;
     background-image: url(http://thumbs.reddit.com/t5_2s8bl_16.png?v=myRedditPonies)
     }
-a[href="/rl00"], a[href="/rlyra"], a[href="/rt00"], a[href="/rbonbon"], a[href="/rsbstare"], a[href="/rsnails"], a[href="/rrdhuh"], a[href="/rspitfire"], a[href="/rcutealoo"], a[href="/rfillytgap"], a[href="/rhappyluna"], a[href="/rlunahappy"], a[href="/rsotrue"], a[href="/rwahaha"], a[href="/rberry"], a[href="/rpunchdrunk"], a[href="/rabsmile"], a[href="/rhuhhuh"], a[href="/rdealwithit"] {
+a[href="/rl00"], a[href="/rlyra"], a[href="/rt00"], a[href="/rbonbon"], a[href="/rsbstare"], a[href="/rsnails"], a[href="/rrdhuh"], a[href="/rspitfire"], a[href="/rcutealoo"], a[href="/rfillytgap"], a[href="/rhappyluna"], a[href="/rlunahappy"], a[href="/rsotrue"], a[href="/rwahaha"], a[href="/rberry"], a[href="/rpunchdrunk"], a[href="/rabsmile"], a[href="/rhuhhuh"], a[href="/rdealwithit"] a[href="/rdealwithit"], a[href="/rnmm"], a[href="/rwhooves"], a[href="/rrdsalute"] {
     display: block;
     clear: none;
     float: left;
@@ -338,6 +350,15 @@ a[href="/huhhuh"], a[href="/rhuhhuh"] {
     }
 a[href="/dealwithit"], a[href="/rdealwithit"] {
     background-position: -140px -280px
+    }
+a[href="/nmm"], a[href="/rnmm"] {
+    background-position: -0px -350px
+    }
+a[href="/whooves"], a[href="/rwhooves"] {
+    background-position: -70px -350px
+    }
+a[href="/rdsalute"], a[href="/rrdsalute"] {
+    background-position: -140px -350px
     }
 
 
