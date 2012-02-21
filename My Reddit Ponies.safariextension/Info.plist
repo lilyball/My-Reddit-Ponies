@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>RogueDarkJedi</string>
 	<key>Builder Version</key>
-	<string>7534.53.10</string>
+	<string>7535.18.5</string>
 	<key>CFBundleDisplayName</key>
 	<string>My Reddit Ponies</string>
 	<key>CFBundleIdentifier</key>
@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.1</string>
+	<string>6.2</string>
 	<key>CFBundleVersion</key>
-	<string>6.1</string>
+	<string>6.2</string>
 	<key>Chrome</key>
 	<dict/>
 	<key>Content</key>
