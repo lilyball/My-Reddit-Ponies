@@ -97,7 +97,7 @@ func fetchVersion() (version string, err error) {
 				break
 			}
 		}
-		fields := bytes.Fields(line)[1:] // skip the //
+		fields := bytes.Fields(line[2:]) // skip the //
 		if string(fields[0]) == "@description" {
 			if string(fields[1]) == "Version" {
 				return string(fields[2]), nil
