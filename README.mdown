@@ -3,7 +3,7 @@ My Reddit Ponies
 
 Port of [My Reddit Ponies][userscripts] to Safari.
 
-The current version is v6.2: [Download it now][download]
+The current version is v6.4: [Download it now][download]
 
 [userscripts]: http://userstyles.org/styles/49858/my-reddit-ponies
-[download]: https://github.com/downloads/kballard/My-Reddit-Ponies/My-Reddit-Ponies-6.2.safariextz
+[download]: https://github.com/downloads/kballard/My-Reddit-Ponies/My-Reddit-Ponies-6.4.safariextz
