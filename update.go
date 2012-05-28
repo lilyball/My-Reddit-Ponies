@@ -177,6 +177,8 @@ func (r *EOLConvReader) Read(p []byte) (n int, err error) {
 		if c == '\r' {
 			r.skipNL = true
 			p[i] = '\n'
+		} else {
+			r.skipNL = false
 		}
 	}
 	return
