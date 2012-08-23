@@ -30,6 +30,8 @@ var (
 )
 
 func main() {
+	log.SetFlags(0)
+	log.SetPrefix("fatal: ")
 	fmt.Println("Downloading CSS...")
 	if err := downloadCSS(); err != nil {
 		log.Fatalln(err)
@@ -39,11 +41,13 @@ func main() {
 		log.Fatalln(err)
 	} else {
 		fmt.Printf("Found version %s\n", version)
-		if err := updatePlist(version); err != nil {
+		if url, err := updatePlist(version); err != nil {
 			log.Fatalln(err)
+		} else {
+			fmt.Println("Complete")
+			fmt.Printf("The download filename is %s\n", filepath.Base(url))
 		}
 	}
-	fmt.Println("Complete")
 }
 
 func downloadCSS() error {
@@ -112,47 +116,48 @@ func fetchVersion() (version string, err error) {
 	return "", errors.New("couldn't find version")
 }
 
-func updatePlist(version string) error {
+func updatePlist(version string) (url string, err error) {
 	// Write the Info.plist
 	plistData, err := ioutil.ReadFile(infoPath)
 	if err != nil {
-		return err
+		return
 	}
 	var dict map[string]interface{}
 	format, err := plist.Unmarshal(plistData, &dict)
 	if err != nil {
-		return err
+		return
 	}
 	dict["CFBundleShortVersionString"] = version
 	dict["CFBundleVersion"] = version
 	if plistData, err = plist.Marshal(dict, format); err != nil {
-		return err
+		return
 	}
-	if err := ioutil.WriteFile(infoPath, plistData, 0644); err != nil {
-		return err
+	if err = ioutil.WriteFile(infoPath, plistData, 0644); err != nil {
+		return
 	}
 
 	// Write the update.plist
 	plistData, err = ioutil.ReadFile(updatePath)
 	if err != nil {
-		return err
+		return
 	}
 	dict = nil
 	format, err = plist.Unmarshal(plistData, &dict)
 	if err != nil {
-		return err
+		return
 	}
 	subdict := dict["Extension Updates"].([]interface{})[0].(map[string]interface{})
 	subdict["CFBundleShortVersionString"] = version
 	subdict["CFBundleVersion"] = version
-	subdict["URL"] = fmt.Sprintf(downloadFormatURL, version)
+	url = fmt.Sprintf(downloadFormatURL, version)
+	subdict["URL"] = url
 	if plistData, err = plist.Marshal(dict, format); err != nil {
-		return err
+		return
 	}
-	if err := ioutil.WriteFile(updatePath, plistData, 0644); err != nil {
-		return err
+	if err = ioutil.WriteFile(updatePath, plistData, 0644); err != nil {
+		return
 	}
-	return nil
+	return
 }
 
 // EOLConvReader is a Reader that swaps EOL to \n
